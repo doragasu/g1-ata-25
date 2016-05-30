@@ -1,4 +1,4 @@
-update=dom 29 may 2016 13:30:32 CEST
+update=lun 30 may 2016 11:21:55 CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,4 +59,4 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=/home/jalon/src/github/doragasu-kicad-lib/doragasu
-LibName31=lib/g1-dc-socket
+LibName31=Oscillators
