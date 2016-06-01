@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/jalon/src/github/g1-ata-25/g1-ata-25.sch)
-    (date "mié 01 jun 2016 18:56:10 CEST")
+    (date "mié 01 jun 2016 22:00:36 CEST")
     (tool "Eeschema (2016-05-06 BZR 6776)-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -29,7 +29,7 @@
       (tstamp 574AD4AE))
     (comp (ref P3)
       (value IDE_40PIN)
-      (footprint Socket_Strips:Socket_Strip_Straight_2x20)
+      (footprint Pin_Headers:Pin_Header_Straight_2x20)
       (libsource (lib doragasu) (part IDE_40PIN))
       (sheetpath (names /) (tstamps /))
       (tstamp 574C0E82))
@@ -58,7 +58,7 @@
       (footprint Housings_DFN_QFN:QFN-16-1EP_3x3mm_Pitch0.5mm)
       (fields
         (field (name manf#) TS30011-M050QFNR))
-      (libsource (lib doragasu) (part TS30011))
+      (libsource (lib g1-ata-25-cache) (part TS30011))
       (sheetpath (names /) (tstamps /))
       (tstamp 574C829E))
     (comp (ref C5)
@@ -232,7 +232,6 @@
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))))
     (libpart (lib conn) (part CONN_01X02)
-      (description "Connector 01x02")
       (footprints
         (fp Pin_Header_Straight_1X02)
         (fp Pin_Header_Angled_1X02)
@@ -245,7 +244,6 @@
         (pin (num 1) (name P1) (type passive))
         (pin (num 2) (name P2) (type passive))))
     (libpart (lib conn) (part CONN_01X04)
-      (description "Connector 01x04")
       (footprints
         (fp Pin_Header_Straight_1X04)
         (fp Pin_Header_Angled_1X04)
@@ -260,7 +258,6 @@
         (pin (num 3) (name P3) (type passive))
         (pin (num 4) (name P4) (type passive))))
     (libpart (lib conn) (part CONN_01X05)
-      (description "Connector 01x05")
       (footprints
         (fp Pin_Header_Straight_1X05)
         (fp Pin_Header_Angled_1X05)
@@ -521,7 +518,7 @@
         (pin (num 2) (name GND) (type passive))
         (pin (num 3) (name FREQ) (type output))
         (pin (num 4) (name VCC) (type power_in))))
-    (libpart (lib doragasu) (part TS30011)
+    (libpart (lib g1-ata-25-cache) (part TS30011)
       (aliases
         (alias TS30012)
         (alias TS30013))
@@ -551,10 +548,12 @@
       (uri /usr/share/kicad/library/device.lib))
     (library (logical conn)
       (uri /usr/share/kicad/library/conn.lib))
-    (library (logical doragasu)
-      (uri /home/jalon/src/github/doragasu-kicad-lib/doragasu.lib))
     (library (logical Oscillators)
-      (uri /usr/share/kicad/library/Oscillators.lib)))
+      (uri /usr/share/kicad/library/Oscillators.lib))
+    (library (logical g1-ata-25-cache)
+      (uri /home/jalon/src/github/g1-ata-25/g1-ata-25-cache.lib))
+    (library (logical doragasu)
+      (uri /home/jalon/src/github/doragasu-kicad-lib/doragasu.lib)))
   (nets
     (net (code 1) (name "Net-(R2-Pad2)")
       (node (ref U2) (pin 5))

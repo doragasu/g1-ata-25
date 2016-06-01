@@ -203,7 +203,7 @@ U 1 1 574C0E82
 P 6450 1350
 F 0 "P3" H 7150 1640 60  0000 C CNN
 F 1 "IDE_40PIN" H 7150 1534 60  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_2x20" H 6450 1350 60  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x20" H 6450 1350 60  0001 C CNN
 F 3 "" H 6450 1350 60  0000 C CNN
 	1    6450 1350
 	1    0    0    -1  
