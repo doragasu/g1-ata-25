@@ -2,3 +2,5 @@
 lib/*.csv
 lib/*.lib
 doc
+*.kicad_pcb-bak
+
