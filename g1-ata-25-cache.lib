@@ -184,8 +184,7 @@ F2 "" 38 -150 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
  CP*
- C_Axial*
- C_Radial*
+ Elko*
  TantalC*
  C*elec
  c_elec*
@@ -452,10 +451,6 @@ F0 "L" -50 0 50 V V C CNN
 F1 "INDUCTOR" 100 0 50 V V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
-$FPLIST
- Choke_*
- *Coil*
-$ENDFPLIST
 DRAW
 A 0 -150 50 -889 889 0 1 0 N 1 -199 1 -100
 A 0 -49 51 -889 889 0 1 0 N 1 -99 1 2
@@ -509,8 +504,13 @@ F1 "LED" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
- LED-*
- LED_*
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
 $ENDFPLIST
 DRAW
 P 2 0 1 0 -50 50 -50 -50 N
